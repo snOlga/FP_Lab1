@@ -36,5 +36,5 @@ let findMaxProduct (lines:string array) (adjacentCount:int)  =
 
 [<EntryPoint>]
 let main (args : string[]) =
-    printf "%d" (findMaxProduct (allNumbers[1].Split[|'0'|]) (allNumbers[0] |> int))
+    IO.File.WriteAllText("output.txt", (findMaxProduct (allNumbers[1].Split[|'0'|]) (allNumbers[0] |> int) |> string) )
     0

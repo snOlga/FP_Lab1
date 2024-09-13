@@ -1,12 +1,12 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
-
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net8.0</TargetFramework>
   </PropertyGroup>
-
   <ItemGroup>
+    <Compile Include="General.fs" />
+    <Compile Include="FoldFitler.fs" />
+    <Compile Include="Recursions.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
-
 </Project>

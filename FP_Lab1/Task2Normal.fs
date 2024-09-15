@@ -7,12 +7,10 @@ let getDivisors number =
                 yield mbDivisor
     ]
 
-let getOneAmicable number =
-    List.sum (getDivisors number)
+let getOneAmicable number = List.sum (getDivisors number)
     
 
-let getAmicables number =
-    (number, getOneAmicable number)
+let getAmicables number = (number, getOneAmicable number)
     
 
 let isAmicable number =

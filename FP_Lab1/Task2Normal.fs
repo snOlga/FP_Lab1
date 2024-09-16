@@ -7,14 +7,14 @@ let getDivisors number =
                 yield mbDivisor
     ]
 
-let getOneAmicable number = List.sum (getDivisors number)
+let getOneAmicable number = lazy List.sum (getDivisors number)
     
 
-let getAmicables number = (number, getOneAmicable number)
+let getAmicables number = (number, (getOneAmicable number).Force())
     
 
 let isAmicable number =
-    number = List.sum (getDivisors (getOneAmicable number)) && number <> (getOneAmicable number)
+    number = List.sum (getDivisors ((getOneAmicable number).Force())) && number <> (getOneAmicable number).Force()
     
 
 let findAmicables minValue maxValue =

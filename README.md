@@ -92,6 +92,10 @@ let rec maxProductInLine (line:string) (adjacentCount:int) (position:int) =
 ```
 let getAmicables number = (number, getOneAmicable number) // int -> int * int
 ```
+Отложенные вычисления:
+```
+let getOneAmicable number = lazy List.sum (getDivisors number)
+```
 
 ## Вывод
 Очень сложно было думать в контексте отсутствующией возможности накапливать счётчики, пришлось действительно переосмысливать первое пришедшее в голову решение 

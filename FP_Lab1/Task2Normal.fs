@@ -10,11 +10,11 @@ let getDivisors number =
 let getOneAmicable number = lazy List.sum (getDivisors number)
     
 
-let getAmicables number = (number, (getOneAmicable number).Force())
+let getAmicables number = (number, (getOneAmicable number).Value)
     
 
 let isAmicable number =
-    number = List.sum (getDivisors ((getOneAmicable number).Force())) && number <> (getOneAmicable number).Force()
+    number = List.sum (getDivisors ((getOneAmicable number).Force())) && number <> (getOneAmicable number).Value
     
 
 let findAmicables minValue maxValue =

@@ -84,7 +84,7 @@ let rec maxProductInLine (line:string) (adjacentCount:int) (position:int) =
         0
 ```
 ---
-[Вариант реализации проблемы 21](./FP_Lab1/Task2Normal.fs)
+[Вариант реализации проблемы 21 -1](./FP_Lab1/Task2Normal.fs)
 
 Использовано:
 
@@ -95,6 +95,22 @@ let getAmicables number = (number, getOneAmicable number) // int -> int * int
 Отложенные вычисления:
 ```
 let getOneAmicable number = lazy List.sum (getDivisors number)
+```
+---
+[Вариант реализации проблемы 21 - 2](./FP_Lab1/Task2Recursion.fs)
+
+Использовано:
+
+Рекурсия:
+```
+let rec getOneAmicable number divisor amicableSum = 
+    if divisor <> 1 then
+        if number % divisor = 0 then
+            getOneAmicable number (divisor-1)(amicableSum + divisor)
+        else
+            getOneAmicable number (divisor-1) amicableSum
+    else
+        amicableSum+1
 ```
 
 ## Вывод

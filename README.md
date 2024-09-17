@@ -1,5 +1,9 @@
 # FP_Lab1
 
+Сафонова Ольга 368764
+
+---
+
 ## Problem 8
 The four adjacent digits in the 
 1000-digit number that have the greatest product are 9 * 9 * 8 * 9 = 5832.
@@ -123,7 +127,9 @@ let rec getOneAmicable number divisor amicableSum =
 ---
 
 [Версия решения на C#](./CSharp/Program.cs)
+
 [Вывод-1](./CSharp/bin/Debug/net8.0/output1.txt)
+
 [Вывод-2](./CSharp/bin/Debug/net8.0/output2.txt)
 
 ## Вывод

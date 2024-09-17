@@ -123,6 +123,8 @@ let rec getOneAmicable number divisor amicableSum =
 ---
 
 [Версия решения на C#](./CSharp/Program.cs)
+[Вывод-1](./CSharp/bin/Debug/net8.0/output1.txt)
+[Вывод-2](./CSharp/bin/Debug/net8.0/output2.txt)
 
 ## Вывод
 Очень сложно было думать в контексте отсутствующией возможности накапливать счётчики, пришлось действительно переосмысливать первое пришедшее в голову решение 

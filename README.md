@@ -69,9 +69,13 @@ let filterSubString (line:string) (position:int) (adjacentCount:int) =
 let findProduct (line:string) =
     List.fold (fun acc elem -> acc * elem) 1 (parseStringToIntList line)
 ```
-Оператор обратного конвейера:
+Оператор обратного конвейера: [код здесь](./FP_Lab1/Program.fs)
 ```
-yield (Char.ToString line[iter] |> int)
+(Task2Normal.findAmicables 0 10000) |> List.iter (fun (num:int, amicable:int) -> writer.WriteLine (sprintf "%d,%d" num amicable))
+```
+Маппинг: [код здесь](./FP_Lab1/General.fs)
+```
+    List.map (fun chr -> int (chr.ToString())) (Seq.toList line)
 ```
 
 ---

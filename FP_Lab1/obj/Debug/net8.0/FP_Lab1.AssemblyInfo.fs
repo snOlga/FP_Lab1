@@ -10,7 +10,7 @@ open System.Reflection
 [<assembly: System.Reflection.AssemblyCompanyAttribute("FP_Lab1")>]
 [<assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")>]
 [<assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")>]
-[<assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a150810cd8778f7f9b3a57d3d2c8daef1196caf4")>]
+[<assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eccef3c1e3ba5daafcd54fcef64803556acffa0d")>]
 [<assembly: System.Reflection.AssemblyProductAttribute("FP_Lab1")>]
 [<assembly: System.Reflection.AssemblyTitleAttribute("FP_Lab1")>]
 [<assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")>]

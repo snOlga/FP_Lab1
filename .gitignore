@@ -1,6 +1,3 @@
 .git
 .vs
-/CSharp/bin
-/CSharp/obj
-/FP_Lab1/bin
-/FP_Lab1/obj
+CSharp/bin

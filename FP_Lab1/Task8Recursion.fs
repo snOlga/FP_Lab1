@@ -1,4 +1,4 @@
-module Recursions
+module Task8Recursion
 
 open System
 open General

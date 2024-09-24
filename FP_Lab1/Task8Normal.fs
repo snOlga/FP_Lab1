@@ -1,4 +1,4 @@
-module FoldFilter
+module Task8Normal
 
 open System
 open General

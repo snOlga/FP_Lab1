@@ -44,7 +44,7 @@ Evaluate the sum of all the amicable numbers under 10000.
 
 ## Реализация
 
-[Вариант реализации проблемы 8 - 1](./FP_Lab1/FoldFitler.fs)
+[Вариант реализации проблемы 8 - 1](./FP_Lab1/Task8Normal.fs)
 
 [Вывод](./FP_Lab1/output1.txt)
 
@@ -71,7 +71,7 @@ let findProduct (line:string) =
 ```
 Оператор обратного конвейера: [код здесь](./FP_Lab1/Program.fs)
 ```
-(Task2Normal.findAmicables 0 10000) |> List.iter (fun (num:int, amicable:int) -> writer.WriteLine (sprintf "%d,%d" num amicable))
+(Task21Normal.findAmicables 0 10000) |> List.iter (fun (num:int, amicable:int) -> writer.WriteLine (sprintf "%d,%d" num amicable))
 ```
 Маппинг: [код здесь](./FP_Lab1/General.fs)
 ```
@@ -79,7 +79,7 @@ let findProduct (line:string) =
 ```
 
 ---
-[Вариант реализации проблемы 8 - 2](./FP_Lab1/Recursions.fs)
+[Вариант реализации проблемы 8 - 2](./FP_Lab1/Task8Recursion.fs)
 
 [Вывод](./FP_Lab1/output2.txt)
 
@@ -96,7 +96,7 @@ let rec maxProductInLine (line:string) (adjacentCount:int) (position:int) =
         0
 ```
 ---
-[Вариант реализации проблемы 21 -1](./FP_Lab1/Task2Normal.fs)
+[Вариант реализации проблемы 21 -1](./FP_Lab1/Task21Normal.fs)
 
 [Вывод](./FP_Lab1/output3.txt)
 
@@ -111,7 +111,7 @@ let getAmicables number = (number, getOneAmicable number) // int -> int * int
 let getOneAmicable number = lazy List.sum (getDivisors number)
 ```
 ---
-[Вариант реализации проблемы 21 - 2](./FP_Lab1/Task2Recursion.fs)
+[Вариант реализации проблемы 21 - 2](./FP_Lab1/Task21Recursion.fs)
 
 [Вывод](./FP_Lab1/output4.txt)
 

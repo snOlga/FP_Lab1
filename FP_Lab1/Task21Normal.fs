@@ -1,4 +1,4 @@
-module Task2Normal
+module Task21Normal
 
 let getDivisors number =
     [

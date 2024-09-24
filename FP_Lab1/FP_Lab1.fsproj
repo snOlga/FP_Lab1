@@ -4,11 +4,11 @@
     <TargetFramework>net8.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Task2Recursion.fs" />
-    <Compile Include="Task2Normal.fs" />
+    <Compile Include="Task21Recursion.fs" />
+    <Compile Include="Task21Normal.fs" />
     <Compile Include="General.fs" />
-    <Compile Include="FoldFitler.fs" />
-    <Compile Include="Recursions.fs" />
+    <Compile Include="Task8Normal.fs" />
+    <Compile Include="Task8Recursion.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
 </Project>

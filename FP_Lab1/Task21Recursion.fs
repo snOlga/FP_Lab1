@@ -1,4 +1,4 @@
-module Task2Recursion
+module Task21Recursion
 
 let getDivisors number =
     [

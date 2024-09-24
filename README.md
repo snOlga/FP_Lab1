@@ -46,7 +46,7 @@ Evaluate the sum of all the amicable numbers under 10000.
 
 [Вариант реализации проблемы 8 - 1](./FP_Lab1/FoldFitler.fs)
 
-[Вывод](./FP_Lab1/bin/Debug/net8.0/output1.txt)
+[Вывод](./FP_Lab1/output1.txt)
 
 Использовано: 
 
@@ -81,7 +81,7 @@ let findProduct (line:string) =
 ---
 [Вариант реализации проблемы 8 - 2](./FP_Lab1/Recursions.fs)
 
-[Вывод](./FP_Lab1/bin/Debug/net8.0/output2.txt)
+[Вывод](./FP_Lab1/output2.txt)
 
 Использовано:
 
@@ -98,7 +98,7 @@ let rec maxProductInLine (line:string) (adjacentCount:int) (position:int) =
 ---
 [Вариант реализации проблемы 21 -1](./FP_Lab1/Task2Normal.fs)
 
-[Вывод](./FP_Lab1/bin/Debug/net8.0/output3.txt)
+[Вывод](./FP_Lab1/output3.txt)
 
 Использовано:
 
@@ -113,7 +113,7 @@ let getOneAmicable number = lazy List.sum (getDivisors number)
 ---
 [Вариант реализации проблемы 21 - 2](./FP_Lab1/Task2Recursion.fs)
 
-[Вывод](./FP_Lab1/bin/Debug/net8.0/output4.txt)
+[Вывод](./FP_Lab1/output4.txt)
 
 Использовано:
 
@@ -132,9 +132,9 @@ let rec getOneAmicable number divisor amicableSum =
 
 [Версия решения на C#](./CSharp/Program.cs)
 
-[Вывод-1](./CSharp/bin/Debug/net8.0/output1.txt)
+[Вывод-1](./CSharp/output1.txt)
 
-[Вывод-2](./CSharp/bin/Debug/net8.0/output2.txt)
+[Вывод-2](./CSharp/output2.txt)
 
 ## Вывод
 Очень сложно было думать в контексте отсутствующией возможности накапливать счётчики, пришлось действительно переосмысливать первое пришедшее в голову решение 

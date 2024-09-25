@@ -95,6 +95,15 @@ let rec maxProductInLine (line:string) (adjacentCount:int) (position:int) =
     else
         0
 ```
+
+Сопоставление с образцом 
+```
+let rec maxProductInLine (line:string) (adjacentCount:int) (position:int) =
+    match (position + adjacentCount) with
+    | sum when sum < (String.length line) -> (maxProductInLine line adjacentCount (position+1))
+    | sum when sum = (String.length line) -> findProduct (filterSubString line position adjacentCount)
+    | _ -> 0
+```
 ---
 [Вариант реализации проблемы 21 -1](./FP_Lab1/Task21Normal.fs)
 
@@ -127,6 +136,15 @@ let rec getOneAmicable number divisor amicableSum =
             getOneAmicable number (divisor-1) amicableSum
     else
         amicableSum+1
+```
+
+Сопоставление с образцом 
+```
+let rec getOneAmicable number divisor amicableSum = 
+    match divisor with
+    | 1 -> amicableSum+1
+    | divisor when (number % divisor = 0) -> getOneAmicable number (divisor-1)(amicableSum + divisor)
+    | _ -> getOneAmicable number (divisor-1) amicableSum
 ```
 ---
 

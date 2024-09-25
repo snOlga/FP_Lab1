@@ -7,12 +7,10 @@ let filterSubString (line:string) (position:int) (adjacentCount:int) =
     String.filter Char.IsDigit line[position..(position+adjacentCount-1)]
 
 let rec maxProductInLine (line:string) (adjacentCount:int) (position:int) =
-    if (position + adjacentCount) < (String.length line) then
-        (maxProductInLine line adjacentCount (position+1))
-    elif (position + adjacentCount) = (String.length line) then
-        findProduct (filterSubString line position adjacentCount)
-    else
-        0
+    match (position + adjacentCount) with
+    | sum when sum < (String.length line) -> (maxProductInLine line adjacentCount (position+1))
+    | sum when sum = (String.length line) -> findProduct (filterSubString line position adjacentCount)
+    | _ -> 0
      
 
 let generateProductList (lines:string array) (adjacentCount:int) = 

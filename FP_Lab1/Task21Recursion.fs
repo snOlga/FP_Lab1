@@ -8,13 +8,10 @@ let getDivisors number =
     ]
 
 let rec getOneAmicable number divisor amicableSum = 
-    if divisor <> 1 then
-        if number % divisor = 0 then
-            getOneAmicable number (divisor-1)(amicableSum + divisor)
-        else
-            getOneAmicable number (divisor-1) amicableSum
-    else
-        amicableSum+1
+    match divisor with
+    | 1 -> amicableSum+1
+    | divisor when (number % divisor = 0) -> getOneAmicable number (divisor-1)(amicableSum + divisor)
+    | _ -> getOneAmicable number (divisor-1) amicableSum
     
 
 let getAmicables number = 

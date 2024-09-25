@@ -2,7 +2,7 @@ module General
 
 open System
 
-let allNumbers = IO.File.ReadAllLines("input.txt")
+let allNumbers = IO.File.ReadAllLines("../../../input.txt")
 
 let parseStringToIntList (line:string) =
     List.map (fun chr -> int (chr.ToString())) (Seq.toList line)
